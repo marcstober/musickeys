@@ -237,5 +237,3 @@ if __name__ == "__main__":
         "musickeys.yaml",
         lambda f: yaml.dump(music_keys_dict, f, indent=2, sort_keys=False),
     )
-
-    print(len(all_keys))

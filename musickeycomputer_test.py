@@ -47,7 +47,7 @@ class TestMusicKeys(unittest.TestCase):
         self.assertEqual(keys[-1].number_of_accidentals, 6)
 
     def test_compute_keys_0_0(self):
-        # No sharps or flats requested; result must be an empty list.
+        # No sharps or flats requested; result must be only the key of C major.
         keys = compute_keys(0, 0)
         print(keys)
         self.assertEqual(len(keys), 1)
