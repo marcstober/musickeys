@@ -1,0 +1,107 @@
+{
+  "Cb": {
+    "key": "Cb",
+    "has_flats": true,
+    "number_of_accidentals": 7,
+    "accidentals": "BEADGCF",
+    "relative_minor": "D"
+  },
+  "Gb": {
+    "key": "Gb",
+    "has_flats": true,
+    "number_of_accidentals": 6,
+    "accidentals": "BEADGC",
+    "relative_minor": "D"
+  },
+  "Db": {
+    "key": "Db",
+    "has_flats": true,
+    "number_of_accidentals": 5,
+    "accidentals": "BEADG",
+    "relative_minor": "D"
+  },
+  "Ab": {
+    "key": "Ab",
+    "has_flats": true,
+    "number_of_accidentals": 4,
+    "accidentals": "BEAD",
+    "relative_minor": "D"
+  },
+  "Eb": {
+    "key": "Eb",
+    "has_flats": true,
+    "number_of_accidentals": 3,
+    "accidentals": "BEA",
+    "relative_minor": "D"
+  },
+  "Bb": {
+    "key": "Bb",
+    "has_flats": true,
+    "number_of_accidentals": 2,
+    "accidentals": "BE",
+    "relative_minor": "D"
+  },
+  "F": {
+    "key": "F",
+    "has_flats": true,
+    "number_of_accidentals": 1,
+    "accidentals": "B",
+    "relative_minor": "C"
+  },
+  "C": {
+    "key": "C",
+    "has_flats": false,
+    "number_of_accidentals": 0,
+    "accidentals": "",
+    "relative_minor": "G"
+  },
+  "G": {
+    "key": "G",
+    "has_flats": false,
+    "number_of_accidentals": 1,
+    "accidentals": "F",
+    "relative_minor": "D"
+  },
+  "D": {
+    "key": "D",
+    "has_flats": false,
+    "number_of_accidentals": 2,
+    "accidentals": "FC",
+    "relative_minor": "A"
+  },
+  "A": {
+    "key": "A",
+    "has_flats": false,
+    "number_of_accidentals": 3,
+    "accidentals": "FCG",
+    "relative_minor": "E"
+  },
+  "E": {
+    "key": "E",
+    "has_flats": false,
+    "number_of_accidentals": 4,
+    "accidentals": "FCGD",
+    "relative_minor": "B"
+  },
+  "B": {
+    "key": "B",
+    "has_flats": false,
+    "number_of_accidentals": 5,
+    "accidentals": "FCGDA",
+    "relative_minor": "F"
+  },
+  "F#": {
+    "key": "F#",
+    "has_flats": false,
+    "number_of_accidentals": 6,
+    "accidentals": "FCGDAE",
+    "relative_minor": "D"
+  },
+  "C#": {
+    "key": "C#",
+    "has_flats": false,
+    "number_of_accidentals": 7,
+    "accidentals": "FCGDAEB",
+    "relative_minor": "D"
+  }
+}
