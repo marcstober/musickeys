@@ -72,6 +72,16 @@ class TestMusicKeys(unittest.TestCase):
         # (our algorithm would go into an infinite loop, but also such keys aren't really a thing)
         self.assertEqual(len(keys), 15)
 
+    def test_compute_relative_minor(self):
+        keys = compute_keys(0, 0)
+        c_major = keys[0]
+        self.assertEqual(c_major.relative_minor, "A")
+
+    def test_compute_relative_minor_with_flats(self):
+        keys = compute_keys(1, 0)
+        f_major = keys[0]
+        self.assertEqual(f_major.relative_minor, "D")
+
 
 if __name__ == "__main__":
     unittest.main()

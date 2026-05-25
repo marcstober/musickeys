@@ -88,14 +88,16 @@ class KeyInfo:
         accidentals = order_of_flats if self.has_flats else order_of_sharps
         self.accidentals = accidentals[: self.number_of_accidentals]
 
-        # Compute the relative minor key.
-        if self.has_flats:
-            # For flat keys, the relative minor is three semitones lower.
-            relative_minor_index = (NOTE_LETTERS.find(self.key) - 3) % len(NOTE_LETTERS)
-        else:
-            # For sharp keys, the relative minor is three semitones lower.
-            relative_minor_index = (NOTE_LETTERS.find(self.key) - 3) % len(NOTE_LETTERS)
-        self.relative_minor = NOTE_LETTERS[relative_minor_index]
+        self.compute_and_update_relative_minor()
+
+    def compute_and_update_relative_minor(self):
+        notes_in_key = (
+            NOTES_SPELLED_WITH_FLATS if self.has_flats else NOTES_SPELLED_WITH_SHARPS
+        )
+
+        # three semitones lower
+        relative_minor_index = (notes_in_key.index(self.key) - 3) % len(notes_in_key)
+        self.relative_minor = notes_in_key[relative_minor_index]
 
 
 def compute_order_of_sharps():
