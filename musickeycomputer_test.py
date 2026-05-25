@@ -5,11 +5,16 @@ from musickeycomputer import (
     compute_keys_with_flats,
     compute_keys_with_sharps,
     compute_order_of_flats,
+    compute_order_of_sharps,
     get_note_in_key,
 )
 
 
 class TestMusicKeys(unittest.TestCase):
+
+    def test_compute_order_of_sharps(self):
+        oos = compute_order_of_sharps()
+        self.assertEqual(oos, "FCGDAEB")
 
     def test_compute_order_of_flats(self):
         oof = compute_order_of_flats()

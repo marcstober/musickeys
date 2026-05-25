@@ -104,7 +104,7 @@ def compute_order_of_sharps():
     """Compute the standard order of sharps using letter-name stepping.
 
     Returns:
-        A 7-character string, "F#C#G#D#A#E#B#", representing the conventional order
+        A 7-character string, "FCGDAEB", representing the conventional order
         sharps are added in key signatures.
 
     Notes:
